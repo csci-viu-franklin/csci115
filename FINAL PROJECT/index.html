@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>MY Diary</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Internal CSS styling -->
+    <style>
+        /* Set background color of the entire page */
+        body {
+            background-color: #ff3366; /* Bright pink background as fallback if video doesn't load */
+        }
+
+    
+        /* Main heading styling */
+        h1 {
+            text-align: center;
+            font-size: 160px;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Content block centered over video */
+        .content {
+            text-align: center;
+        }
+
+        /* Explore button styling */
+        nav a {
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            font-size: 24px;
+            border: 2px solid #fff;
+            padding: 14px 70px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+
+        /* Fullscreen background video styling */
+        video {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            z-index: -1; /* Send behind other elements */
+        }
+
+        /* Responsive: adjust video for taller screen ratios */
+        @media(max-aspect-ratio: 16/10) {
+            video {
+                width: auto;
+                height: 100vh;
+            }
+        }
+
+        /* Responsive: adjust video for wider screen ratios */
+        @media(min-aspect-ratio: 16/10) {
+            video {
+                width: 100vw;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero section -->
+    <div class="hero">
+        <!-- Background video -->
+        <video autoplay loop muted plays-inline>
+            <source src="videos/IMG_3522.MOV"> <!-- Make sure this path is correct and the video is optimized for web -->
+        </video>
+
+        <!-- Content displayed above video -->
+        <div class="content">
+            <h1>MY DIARY</h1>
+            <nav>
+                <a href="pages/LeavingLagos.html">EXPLORE</a> <!-- Navigation button to start the diary -->
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title> 
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../Styles/styles.css">
+
+    <!-- Internal styles -->
+    <style>
+        /* Basic body layout and styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+
+        /* Navigation list item styles */
+        nav ul li {
+            list-style: none; /* Removes bullet points */
+            display: inline-block; /* Displays items in a row */
+            margin-left: 40px; /* Adds spacing between items */
+        }
+
+        /* Header styling */
+        header {
+            color: white;
+            font-size: 60px;
+        }
+
+        /* Wrapper container for each section (image + text) */
+        .wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 150px;
+            width: 70%;
+            color: white;
+        }
+
+        /* Image styling inside wrapper */
+        .wrapper img {
+            max-width: 320px;
+            border: 3px solid white;
+            border-radius: 10px;
+            margin: 0 15px;
+        }
+
+        /* Styling for titles inside text boxes */
+        .text-box h1,
+        .text-box h2,
+        .text-box h3 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        /* Styling for paragraphs inside text boxes */
+        .text-box p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Alternate layout: odd-numbered wrappers (normal direction) */
+        .wrapper:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        /* Alternate layout: even-numbered wrappers (image on the right) */
+        .wrapper:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page title header -->
+    <header>
+        Leaving Lagos
+    </header>
+
+    <!-- First story section -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-08-46.jpg" alt="First Picture">
+        <div class="text-box">
+            <h1>Leaving Lagos</h1>
+            <p>
+                Leaving Lagos was definitely an emotional moment as I was leaving the country I had lived in for 19 years of my life, not knowing when I would return.
+                Onboard the flight, I tried to get some sleep but the excitement just wouldn't let me. I spent most of the time looking out the window, staring at the dark,
+                before trying to watch something to keep me busy. Leaving at night made the moment even more surreal.
+            </p>
+        </div>
+    </div>
+
+    <!-- Second story section -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-09-16.jpg" alt="Second Picture">
+        <div class="text-box">
+            <h2>Arriving in London</h2>
+            <p>We had a 7-hour layover in London, so we spent most of the time at my dad's personal tailor.</p>
+        </div>
+    </div>
+
+    <!-- Third story section -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-09-48.jpg" alt="Third Picture">
+        <div class="text-box">
+            <h3>Lunch At Heathrow</h3>
+            <p>
+                After we were done at the tailor's, we went back to the airport. We decided to have lunch there because we didn’t want to risk missing our flight
+                by going into the city. I settled for yakisoba, which I didn’t enjoy much, but hey — 10/10 for presentation!
+            </p>
+        </div>
+    </div>
+
+    <!-- Fourth story section -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-10-07.jpg" alt="Fourth Picture">
+        <div class="text-box">
+            <h3>Flight To Montreal</h3>
+            <p>
+                Once we boarded the last flight to Montreal, we were parked at the gate for about 2 hours (yes, 2 hours!) waiting for some paperwork to be completed before takeoff.
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation menu at the bottom -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="TimeInMontreal.html">Time In Montreal</a></li>
+            <li><a href="ArrivingInNanaimo.html">Arriving in Nanaimo</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="../index.html">Home Page</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
