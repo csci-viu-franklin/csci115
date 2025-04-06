@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>My Diary</title> 
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="../Styles/styles.css">
+
+    <!-- Internal styling for page-specific elements -->
+    <style>
+        /* Page body setup */
+        body {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center horizontally */
+            min-height: 100vh; /* Take up full vertical space */
+            background-color: black;
+            margin: 0;
+        }
+
+        /* Navbar list styling */
+        nav ul li {
+            list-style: none; /* Removes default bullets */
+            display: inline-block; /* Aligns list items horizontally */
+            margin-left: 40px; /* Spacing between items */
+        }
+
+        /* Header title styling */
+        header {
+            color: white;
+            font-size: 60px;
+        }
+
+        /* Section wrapper for each story (image + text) */
+        .wrapper {
+            display: flex;
+            align-items: flex-start; /* Align text and image at top */
+            justify-content: center;
+            margin: 150px;
+            width: 70%;
+            color: white;
+        }
+
+        /* Image styling inside wrapper */
+        .wrapper img {
+            max-width: 320px;
+            border: 3px solid white;
+            border-radius: 10px;
+            margin: 0 15px;
+        }
+
+        /* Heading styles inside each text block */
+        .text-box h1, .text-box h2, .text-box h3 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        /* Paragraph styles inside text box */
+        .text-box p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Alternate layout: odd sections have image on the left */
+        .wrapper:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        /* Alternate layout: even sections have image on the right */
+        .wrapper:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page title -->
+    <header>
+        TIME IN MONTREAL
+    </header>
+
+    <!-- Section 1: Montreal sunset -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-10-40.jpg" alt="First Picture">
+        <div class="text-box">
+            <h1>Montreal Beautiful Sunset</h1>
+            <p>
+                I spent about 3 months in Montreal and I've got to say—Montreal has some of the most beautiful sunsets.
+                I'd always stop to take pictures of it while out walking with my mom.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 2: Estate scene -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-10-43.jpg" alt="Second Picture">
+        <div class="text-box">
+            <h2>Montreal</h2>
+            <p>The estate in which we lived had some beautiful scenes.</p>
+        </div>
+    </div>
+
+    <!-- Section 3: Ontario water park -->
+    <div class="wrapper">
+        <img src="../images/01.12.2024_21.00.17_REC.png" alt="Third Picture">
+        <div class="text-box">
+            <h3>Water Park</h3>
+            <p>
+                Well technically this was in Ontario—but no one's gonna know, shhh.
+                Anyway, we drove down to the water park—or I should say, *I* drove the family on this 4-hour trip!
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 4: Friends on Canada Day -->
+    <div class="wrapper">
+        <img src="../images/photo_2024-11-29_01-11-17.jpg" alt="Fourth Picture">
+        <div class="text-box">
+            <h3>Friends</h3>
+            <p>
+                I met some cool people while I was there. This picture was taken on Canada Day,
+                and they were teaching me how to ride a skateboard.
+            </p>
+        </div>
+    </div>
+
+    <!-- Bottom navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="LeavingLagos.html">LEAVING LAGOS</a></li>
+            <li><a href="ArrivingInNanaimo.html">Arriving in Nanaimo</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="../index.html">Home Page</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
